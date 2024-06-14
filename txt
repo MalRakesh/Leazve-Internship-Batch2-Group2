@@ -1,0 +1,19 @@
+    <script>
+      var icon = document.getElementById("icon1");
+
+      icon1.onclick = function(){
+        document.body.classList.toggle('dark-them')
+        if(document.body.classList.contains('dark-them')){
+          icon1.src="sun-solid-24.png";
+        }else{
+          icon1.src = "moon-regular-24 (2).png";
+        }
+      }
+
+    </script>
+
+       <li>   <img src="moon-regular-24 (2).png" id="icon1"></li>
+
+       
+    id="header-col"
+    id="title"

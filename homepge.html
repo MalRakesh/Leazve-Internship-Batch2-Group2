@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BooksBazaar</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="script.js" /> -->
+    <link rel="stylesheet" href="ImageSlider.css" />
+    <link rel="stylesheet" href="footer.css" />
+
+    <!-- <link rel="stylesheet" href="file.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+ 
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+
+
+  </head>
+  <script
+    type="text/javascript"
+    src="https://platform-api.sharethis.com/js/sharethis.js#property=664ff604006cfd001d4da667&product=sticky-share-buttons&source=platform"
+    async="async"
+  ></script>
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jQuery.js"></script>
+  <script
+    src="https://kit.fontawesome.com/5b085419ed.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <body>
+    <header>
+      <!-- nav -->
+      <!-- <div class="sharethis-sticky-share-buttons"></div> -->
+      <div id="header-col" class="menu-bar">
+        <h1 id="logo">Books<span id="header-col"> Bazaar</span></h1>
+        <ul>
+          <li>
+            <a href="homepge.html" id="header-col">Home</a>
+          </li>
+          <li>
+            <a href="#" id="header-col" >Categories <i class="fas fa-caret-down"></i></a>
+
+            <div class="dropdown-menu" id="header-col">
+              <ul>
+                <li><a href="romance.html">Romantic Books</a></li>
+                <li><a href="animated.html">Animated Books </a></li>
+                <li><a href="motivation.html">Motivational Books</a></li>
+                <li><a href="health.html">Health & Fitness Books</a></li>
+                <li><a href="adventure.html">Adventure Books</a></li>
+                <li>
+                  <a href="Economics.html">Business & Economics Books</a>
+                </li>
+                <li><a href="horror.html">Horror Books</a></li>
+                <li><a href="BIO.html">Biography Books</a></li>
+                <li><a href="cooking.html">Cooking Books</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" id="header-col">Pages <i class="fas fa-caret-down"></i></a>
+
+            <div class="dropdown-menu" id="header-col">
+              <ul>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="news.html">Blog</a></li>
+                <li><a href="FAQ.php">FAQ's</a></li>
+                <li>
+                  <a
+                    href="https://booksbazaaar.000webhostapp.com/pages/contact_us.php"
+                    >Contact Us</a
+                  >
+                </li>
+                <li><a href="ImageSlider.html">Our Team</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#" class="logo" id="header-col">Logout</a></li>
+        
+        </ul>
+    
+      </div>
+    </header>
+    <!-- homepagedesign -->
+    <div class="background">
+      <section class="home">
+        <div class="home-text">
+          <h4>Hello!</h4>
+
+          <h1 class="HI">Reader'</h1>
+          <p class="text">
+            "Welcome to our sanctuary of stories! Let's dive into a world where
+            every page holds a new adventure"<br />"Let your imagination roam
+            freely as you explore our curated collection of books Happy
+            Reading!"
+          </p>
+          <a href="romance.html" class="btn">Get Started</a>
+        </div>
+      </section>
+
+      <!-- features -->
+      <section class="features">
+        <h1 align="center">Featured Genre</h1>
+        <br /><br />
+        <div class="feature-content">
+          <div class="row">
+            <div class="row-img">
+              <a href="romance.html"
+                ><img src="img/romance.jpg" width="200px"
+              /></a>
+            </div>
+            <h4 id="title">Romance</h4>
+          </div>
+
+          <div class="row">
+            <div class="row-img">
+              <a href="animated.html"
+                ><img src="img/manga.jpg" width="200px"
+              /></a>
+            </div>
+            <h4 id="title">Manga</h4>
+          </div>
+
+          <div class="row">
+            <div class="row-img">
+              <a href="adventure.html"><img src="img/thriller.jpg" /></a>
+            </div>
+            <h4 id="title">Thriller</h4>
+          </div>
+
+          <div class="row">
+            <div class="row-img">
+              <a href="horror.html"><img src="img/horror.jpg" /></a>
+            </div>
+            <h4 id="title">Horror</h4>
+          </div>
+
+          <div class="row">
+            <div class="row-img">
+              <a href="cooking.html"><img src="img/cooking.jpg" /></a>
+            </div>
+            <h4id="title">Cooking Books</h4>
+          </div>
+        </div>
+        <br />
+
+        <section class="featured section" id="featured">
+          <h2 align="center" class="section__title" id="title">Featured Books</h2>
+          <br />
+
+          <div class="featured__container container">
+            <div class="featured__swiper swiper">
+              <div class="swiper-wrapper">
+                <article class="featured__card swiper-slide" id="title-1">
+                  <a href="#"
+                    ><img
+                      src="https://static.wixstatic.com/media/3d1b86_a4884e4449f24559a977ee4e719ecc8d~mv2.jpg/v1/fill/w_740,h_1111,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3d1b86_a4884e4449f24559a977ee4e719ecc8d~mv2.jpg"
+                      alt="image"
+                      class="featured__img"
+                  /></a>
+
+                  <h2 class="featured__title swiper-slide" id="title">Featured Books</h2>
+                  <div class="featured__prices">
+                    <span class="featured__discount" >₹500</span>
+                    <span class="featured__price" >₹700</span>
+                  </div>
+
+                  <a href="godoffury.html"
+                    ><button class="btn">Have A Look</button></a
+                  >
+
+                  <div class="featured__action">
+                    <a href="https://www.rinakent.com/god-of-wrath"
+                      ><button><i class="bx bx-search-alt-2"></i></button
+                    ></a>
+                    <button><i class="bx bx-heart"></i></button>
+                  </div>
+                </article>
+
+                <article class="featured__card swiper-slide">
+                  <img
+                    src="https://static.wixstatic.com/media/d81682_3e18475080bf4e56bc934d4730916f57~mv2.jpg/v1/fill/w_338,h_500,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/GodofWar_Ebook.jpg"
+                    alt="image"
+                    class="featured__img"
+                  />
+
+                  <h2 class="featured__title" id="title">Featured Books</h2>
+                  <div class="featured__prices">
+                    <span class="featured__discount">₹500</span>
+                    <span class="featured__price">₹700</span>
+                  </div>
+
+                  <a href="godofruin (1).html"
+                    ><button class="btn">Have A Look</button></a
+                  >
+
+                  <div class="featured__action">
+                    <a href="https://www.rinakent.com/god-of-war"
+                      ><button><i class="bx bx-search-alt-2"></i></button
+                    ></a>
+                    <button><i class="bx bx-heart"></i></button>
+                  </div>
+                </article>
+
+                <article class="featured__card swiper-slide">
+                  <a href="yourname (1).html"
+                    ><img
+                      src="https://m.media-amazon.com/images/I/71YoxjSxCEL._SY425_.jpg"
+                      alt="image"
+                      class="featured__img"
+                  /></a>
+
+                  <h2 class="featured__title" id="title">Featured Books</h2>
+                  <div class="featured__prices">
+                    <span class="featured__discount">₹500</span>
+                    <span class="featured__price">₹700</span>
+                  </div>
+
+                  <a href="yourname (1).html"
+                    ><button class="btn">Have A Look</button></a
+                  >
+
+                  <div class="featured__action">
+                    <a href="#"
+                      ><button><a href="https://en.wikipedia.org/wiki/Your_Name"><i class="bx bx-search-alt-2"></i></button
+                    ></a>
+                    <button><i class="bx bx-heart"></i></button>
+                  </div>
+                </article>
+
+                <article class="featured__card swiper-slide">
+                  <a href="demonslayer (1).html"
+                    ><img
+                      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMCu6y64QLe7T_vHNqjhnjL4rWTK1SkqvdHXVCLx6SZrWTtY_MIxD95A-fpm3113_VwxPUHz3fkgXPwRKzYAnQBGtk8n-tBF_R8goiBaO0ejypPOX-ZcTrIBA0v448lCtLOidH9Z8tW4vunlNe_w7q_1ZvIDE8czg_lC0Jx7HO36NDf2wCw5_cuHos9SY/s694/a3.jpg"
+                      alt="image"
+                      class="featured__img"
+                  /></a>
+
+                  <h2 class="featured__title" id="title">Featured Books</h2>
+                  <div class="featured__prices">
+                    <span class="featured__discount">₹500</span>
+                    <span class="featured__price">₹700</span>
+                  </div>
+
+                  <a href="demonslayer (1).html"
+                    ><button class="btn">Have A Look</button></a
+                  >
+
+                  <div class="featured__action">
+                    <a href="#"
+                      ><button><a href="https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba"><i class="bx bx-search-alt-2"></i></button
+                    ></a>
+                    <button><i class="bx bx-heart"></i></button>
+                  </div>
+                </article>
+
+                <article class="featured__card swiper-slide">
+                  <a href="deathnote (1).html"
+                    ><img
+                      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhe79q2NzkXPd_1IcM-aeU9bcafDMfIuirjWjrCzeu-nahCCl0B5TOYJ26PTf7CX4UjJjr6_xH_iG_4f6t29H-0CvxL6DdDYXn9CIN_yuPUyDb9fpfXr-z7GKis-zXG0yQlFzpJQLuQMFLTyBJvpm0WDd5DX9gfiOpMA5Z1dresHUie8OjscN4d1C0FgyE/s1600/a17.jpg"
+                      alt="image"
+                      class="featured__img"
+                  /></a>
+
+                  <h2 class="featured__title" id="title">Featured Books</h2>
+                  <div class="featured__prices">
+                    <span class="featured__discount">₹500</span>
+                    <span class="featured__price">₹700</span>
+                  </div>
+
+                  <a href="deathnote (1).html"
+                    ><button class="btn" >Have A Look</button></a
+                  >
+
+                  <div class="featured__action">
+                    <a href="#"
+                      ><button><i class="bx bx-search-alt-2"></i></button
+                    ></a>
+                    <button><i class="bx bx-heart"></i></button>
+                  </div>
+                </article>
+
+                <article class="featured__card swiper-slide">
+                  <img
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUnRHngdWRa8lIVMw3Jsej3b9xgBGFOqLcoHjs8Zyg2p99ZYgC7wyLb_EWDFy91apzhLM5wuQaOlQvlgGWB5K4Kb1o1J7e5oCjUTdqd3yZZySMnxysTFnQjCKzL4Uivs3hCHkTlRHrq6mHKL_SlQ4r4SVMnAfXDWt5ynsy3yJicU_boX9FKNzLOdX50xaP/s320/f9339967483e69b8bb1bbfb2bedbebd4.jpg"
+                    alt="image"
+                    class="featured__img"
+                  />
+
+                  <h2 class="featured__title" id="title">Featured Books</h2>
+                  <div class="featured__prices">
+                    <span class="featured__discount">₹500</span>
+                    <span class="featured__price">₹700</span>
+                  </div>
+
+                  <button class="btn">Have A Look</button>
+
+                  <div class="featured__action">
+                    <a href="#"
+                      ><button><i class="bx bx-search-alt-2"></i></button
+                    ></a>
+                    <button><i class="bx bx-heart"></i></button>
+                  </div>
+                </article>
+
+                <article class="featured__card swiper-slide">
+                  <a href="#"
+                    ><img
+                      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgY1eoy0ZpKBkm3_AiqQqiKYUaxfQBmmdNEScq60kd7Vy3hIdgIrDRzeOTfC6-DkJwQ2yX_RUNueTi1in8CV8byJG9JGChfWS8NiF6EKIiIZ7udO2hFygLr04BYSzBG9ksD0Pp6LAVHfTr7vQ-Rr3R88Y3B_86rSdin-nkaD-H8-y9mf4r-E6EpZ0OXgkA/s522/1.jpg"
+                      alt="image"
+                      class="featured__img"
+                  /></a>
+
+                  <h2 class="featured__title" id="title">Featured Books</h2>
+                  <div class="featured__prices">
+                    <span class="featured__discount">₹500</span>
+                    <span class="featured__price">₹700</span>
+                  </div>
+
+                  <a href="bridegton.html"
+                    ><button class="btn">Have A Look</button></a
+                  >
+
+                  <div class="featured__action">
+                    <a href="#"
+                      ><button><i class="bx bx-search-alt-2"></i></button
+                    ></a>
+                    <button><i class="bx bx-heart"></i></button>
+                  </div>
+                </article>
+
+                <article class="featured__card swiper-slide">
+                  <a href="#"
+                    ><img
+                      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisHkx3mcjHyWmz2ykVHssss-KPfWnT6ByrDljHepXWddoUREFgbqENwya2bjEUYOLqSP_OtOlhCMgmmVKqpT2LieQZ5bQ4XV8Us67iKr8Fro3oaDfOYw5m_c3VhNWe_Td-Y1R2Z2l4s5DqqMprAo3ywCDLKcswhQ7945YXmc2esXsTPm3ZzaW6UZI8kD0/s445/3.jpg"
+                      alt="image"
+                      class="featured__img"
+                  /></a>
+
+                  <h2 class="featured__title" id="title">Featured Books</h2>
+                  <div class="featured__prices">
+                    <span class="featured__discount">₹500</span>
+                    <span class="featured__price">₹700</span>
+                  </div>
+
+                  <a href="ideaofu.html"
+                    ><button class="btn">Have A Look</button></a
+                  >
+
+                  <div class="featured__action">
+                    <a href="#"
+                      ><button><i class="bx bx-search-alt-2"></i></button
+                    ></a>
+                    <button><i class="bx bx-heart"></i></button>
+                  </div>
+                </article>
+
+                <article class="featured__card swiper-slide">
+                  <img
+                    src="https://blogger.googleusercontent.com/img/a/AVvXsEiLKlPUU4AGuhUetyCTI8iy3rFEssziUAzLRx7uleYTZbI_CB3ns8LMtHAZGYdqJe8zcVpUuIJ6wooQ3drEDV-qKeHqkl-c_MtGNWd8dH1CBO5aSmY0hS3bjYrk25hEuZUS7RNxNhKWNiy-_ik82oPq2J7Jqq2HKURrlWK22AL4ZUdmVdpX5rkXdhW-Kpk"
+                    class="featured__img"
+                  />
+
+                  <h2 class="featured__title" id="title">Featured Books</h2>
+                  <div class="featured__prices">
+                    <span class="featured__discount">₹500</span>
+                    <span class="featured__price">₹700</span>
+                  </div>
+
+                  <button class="btn">Have A Look</button>
+
+                  <div class="featured__action">
+                    <a href="#"
+                      ><button><i class="bx bx-search-alt-2"></i></button
+                    ></a>
+                    <button><i class="bx bx-heart"></i></button>
+                  </div>
+                </article>
+
+                <article class="featured__card swiper-slide">
+                  <img
+                    src="https://blogger.googleusercontent.com/img/a/AVvXsEh-RAEFnRYNhc3TCiDjfiCrKkSdrlLU6DoHSdNKEem-i7eb0MMmLGMQgZEXsA5ojXTvGcMyZuFudAgGYkR7zq3wmm-dtvzZpt_P7NxeuxJKLpxBF7qlGsR9hHtYrDE2wXPjOjTxLhYTNTHoQ5xm5MxBqi60VKgLzF6L1ICmHn-NKYWs4w4MJO6DA-B3BAc"
+                    class="featured__img"
+                  />
+
+                  <h2 class="featured__title" id="title">Featured Books</h2>
+                  <div class="featured__prices">
+                    <span class="featured__discount">₹500</span>
+                    <span class="featured__price">₹700</span>
+                  </div>
+
+                  <button class="btn">Have A Look</button>
+
+                  <div class="featured__action">
+                    <a href="#"
+                      ><button><i class="bx bx-search-alt-2"></i></button
+                    ></a>
+                    <button><i class="bx bx-heart"></i></button>
+                  </div>
+                </article>
+
+                <article class="featured__card swiper-slide">
+                  <img
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXDyC3pLHvyF3TltI-Se0KgKFkHVzINWtLGFqZ-DhFS1E3GNd7v7g-tyNxyS_IGvGjSIY8tVLIEkvHCweknSn5peHWF4ZfuN66MRBZvg4ys9tH5lroRj3evuQJxIF_3Gy8DqH9hmYpHeW4gN42g12TdUnCQK0hJDFXqkhbm1AUDp_wZ05IeYdiJElagC0/s320/2.jpg"
+                    class="featured__img"
+                  />
+
+                  <h2 class="featured__title" id="title">Featured Books</h2>
+                  <div class="featured__prices">
+                    <span class="featured__discount">₹500</span>
+                    <span class="featured__price">₹700</span>
+                  </div>
+
+                  <a href="santuary.html"
+                    ><button class="btn">Have A Look</button></a
+                  >
+
+                  <div class="featured__action">
+                    <a href="#"
+                      ><button><i class="bx bx-search-alt-2"></i></button
+                    ></a>
+                    <button><i class="bx bx-heart"></i></button>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="discount section" id="discount">
+          <div class="discount__container discount grid">
+            <div class="discount__data">
+              <h2 class="discount" id="title">
+                UpTo 50% off on Adventure Books
+              </h2>
+              
+              <br />
+
+              <p class="discount___description" id="title">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aliquam, nostrum pariatur iste quam, obcaecati odio autem, sunt
+                reiciendis dolorum ipsum porro voluptatibus recusandae
+                blanditiis nihil?Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Eveniet perferendis culpa excepturi vero
+                tempora ad ipsam eum suscipit, maxime aliquid dolores. Quis,
+                ipsam quisquam! Quasi.
+              </p>
+              <br />
+              <div class="discount__image">
+                <img
+                  src="https://blogger.googleusercontent.com/img/a/AVvXsEi1Uk5lec5EV0GrupiiuE2T3QJknHonCKtIrelWrokz9xTJ7gSNlldLNCTiqBb-yMBbNlXAF0I7qtR-MnKwFWicHpZYXIwNC6rELIwiskajuXGo08ZC2BEJUZ45TUerFTGIjOJUFDXtyEUxNFDtr7NfGWPY-8HJnq2YwmJDI9XMGGTEgSWsXn5o8dNIxyY"
+                  class="discount__img1"
+                />
+                <img
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhihEOOHYCUrBUemFNWitSH6Ip7q5oaBVxb8GE_N5eB_t35HHh5BMapUHpAIijubyk_aDgDOJRHGSCOOcFQqiRyUNdHo77eiz_9tkxLPTIGTuLpvk22IiHCwVVmJeBobGu_r1G3BffVUqSOr4CswCHBx9AsTGmzAThJ_N4oYxdcN3g31lDukibsieaEhOI/s1600/r8.jpg"
+                  class="discount__img2"
+                />
+              </div>
+              <br />
+              <a href="adventure.html"
+                ><button class="button" id="button2">CheckOut</button></a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="author section" id="author">
+          <div class="author__container">
+            <div class="author__data">
+              <h1 align="center"  id="title1">
+                Best Author Of The Week
+              </h1>
+              <br>
+
+              <h2 align="center" class="author" id="title">Julia Quinn</h2>
+              <br />
+              <p align="center">
+                Julia Quinn, the reigning queen of historical romance, spins
+                tales that whisk readers away to Regency-era England with wit,
+                charm, and irresistible romance. With her clever dialogue,
+                endearing characters, and sparkling storytelling, she enchants
+                readers, leaving them eagerly turning the pages for more Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Est maiores
+                nostrum facere architecto officiis cum aliquid, molestiae,
+                veritatis modi alias corporis?.
+              </p>
+              <br />
+              <div class="author__image" >
+                <img
+                  src="https://blogger.googleusercontent.com/img/a/AVvXsEjGeNX_VI_jVUuBPE6Ouod4LWEA9_x1n_iPKXEWjpNMb_zAjEGeQkwTpmhK81qE9fSfVUBy77GsbtNenRlD3cBL6TnV1SfjO7mFYGDvU2THMrkKCqrr-As3ecsu4pqlmovo2Ierj3APR-TCCfPvRQ3E8odqIjbrfLkQWbn58_3XTo6ABvRDMKLmcHih6hk"
+                  class="author__img1"
+                />
+              </div>
+              <br />
+              <a href="https://juliaquinn.com/"
+                ><button class="button-1">More Info ></button></a
+              >
+            </div>
+          </div>
+        </section>
+        <br />
+        <br />
+        <h2 align="center"  class="head">
+          Customer Reviews
+        </h2>
+        <section class="section__container">
+          <div class="container">
+            <div class="card">
+              <div class="content">
+                <div class="imgBx">
+                  <img
+                    src="https://blogger.googleusercontent.com/img/a/AVvXsEifG1ds0Qjt0oTwINSIoy-1HHRdokNCCSbuhX8llIHAgDUL0-iFeeDI1eVjuKZBZ8XKMHFlU8qLXHqCUQBH6A5kp-jNbWwDmVpk4-F2FJ07CGRKemgNgCDcQ2L9CyhYwr1rlvFCMpdptZ_00JoVAyybM9sLyi3U_jQw_LotrmyM49gKrbWxwsos9a39LrE"
+                    alt=""
+                  />
+                </div>
+                <div class="contentBx">
+                  <h4>James Ford</h4>
+                  <br />
+                  <p align="center">
+                    The best website to buy books, Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Ipsam blanditiis dolorum in,
+                    voluptas architecto quas. Maxime praesentium eos atque natus
+                    consequatur?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <div class="imgBx">
+                  <img
+                    src="https://blogger.googleusercontent.com/img/a/AVvXsEigHs4qMJIf1OV0urCvRAff8fiV30cewVscIVDrDLEq3UqWM030QmZfI3PC_V_yryt4kMRZ2_fe9LNaoB3L8BlrJFWJtgBKWtDMfq2JwL5_2l4DN-PMSXlZ-P_CorPUBcOtej0apm0VWg1v0BbYRfucH0sb1nQdmEvRO0tS_pi_ho4aWB7z29cdAIMOghI"
+                    alt=""
+                  />
+                </div>
+                <div class="contentBx">
+                  <h4>Ann Brown</h4>
+                  <br />
+                  <p align="center">
+                    The best website to buy books, Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Ipsam blanditiis dolorum in,
+                    voluptas architecto quas. Maxime praesentium eos atque natus
+                    consequatur?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <div class="imgBx">
+                  <img
+                    src="https://blogger.googleusercontent.com/img/a/AVvXsEgzLK6drmH8ytIpZQMEYS9ipHzAlxyIE8CAd_K5uqFE2qnTzv8gQlPFmqe2WsFBqD04Ye5cESr_VBY1Hv5XpK93BBN6JhW-hXtBAbyXjWzlMHuk_EmdNrbwbf-XYsSuQEEAi1JTUE2GVItvISxtxSe3VgXtrd4N0MfmsGb9bGbAl4beoPXl1PXhBv7itxM"
+                    alt=""
+                  />
+                </div>
+                <div class="contentBx">
+                  <h4>Lewis Ham</h4>
+                  <br />
+                  <p align="center">
+                    The best website to buy books, Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Ipsam blanditiis dolorum in,
+                    voluptas architecto quas. Maxime praesentium eos atque natus
+                    consequatur?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <div class="imgBx">
+                  <img
+                    src="https://blogger.googleusercontent.com/img/a/AVvXsEhDqC2_vkWHRxXQB4A8glPS_GLGOd3e9ZpOQF7r_ljUdzC3F8m15sEK33qsX4V5i1sEbgqu_Ou5eft451DJA_UdcpclSs7NIiWaQFr-mJK-b-dPjgRjPXzbfaZDlcJsORoE8uyRO-t2MLd1ZKIp9Aj5c33VCidFoC4cBp5G1dZIf5WSXk6Fk6I5nUYzpes"
+                    alt=""
+                  />
+                </div>
+                <div class="contentBx">
+                  <h4>Carlos sainz</h4>
+                  <br />
+                  <p align="center">
+                    The best website to buy books, Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Ipsam blanditiis dolorum in,
+                    voluptas architecto quas. Maxime praesentium eos atque natus
+                    consequatur?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <div class="imgBx">
+                  <img
+                    src="https://blogger.googleusercontent.com/img/a/AVvXsEgD5Xiko0j1Waa2AMvjcuOrbXRsNg9FsmLR_1NKU_5lI1v-V3CKNFJuvI2aG2jVlRR19fpSkb7SfB0ppK_29ts_DqjhIqizla7uJSvlGH7iVl0pWC3Mv5umzdGnfyuOruT9ldgG6sa5fFvwujeZ_v5TwWh6AkWPsP0ucpy2KxOxN4ci4_WeocLLYFxWvTU"
+                    alt=""
+                  />
+                </div>
+                <div class="contentBx">
+                  <h4>Charles Lec</h4>
+                  <br />
+                  <p align="center">
+                    The best website to buy books, Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Ipsam blanditiis dolorum in,
+                    voluptas architecto quas. Maxime praesentium eos atque natus
+                    consequatur?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        
+          <h1 align="center" class="head" id="title">Our Blogs</h1>
+          <br>
+          <br>
+          <div class="blog">
+            <div class="left">
+              <img src="Images/blog-1.png" />
+            </div>
+            <div class="right">
+              <h1 class="bl" id="title">Hello Readers!</h1>
+              <p class="pli" id="title">
+                "Welcome to our blog page, where inspiration meets insight! Dive
+                into a world of captivating content crafted just for you. From
+                expert tips to thought-provoking discussions, our blog is your
+                go-to destination for all things informative and engaging. Join
+                us on this journey of discovery, where every click unlocks a
+                wealth of knowledge and inspiration. Step into the world of
+                captivating content crafted just for you. Visit us today and
+                embark on a voyage of learning and exploration!"
+              </p>
+              <br />
+              <br />
+              <br />
+
+              <a href="about_us.html"><button class="pliy"  id="button2">Visit ></button></a>
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <h1 align="center" class="head" id="title">About Us</h1>
+          <br>
+          <br>
+          <div class="blog">
+            <div class="right">
+              <h1 class="bl" id="title">Know more about us!</h1>
+              <p class="pli">
+                "Welcome to our world of innovation and excellence! At [Company
+                Name], we're dedicated to crafting exceptional experiences and
+                solutions tailored just for you. Step into a realm where
+                imagination meets expertise, where every detail is meticulously
+                crafted to exceed expectations. Whether you're seeking
+                cutting-edge technology, unparalleled service, or simply curious
+                to explore what sets us apart, we invite you to embark on a
+                journey of discovery with us. Let's unlock possibilities,
+                together. Welcome to [Company Name], where your vision becomes
+                reality."
+              </p>
+              <br />
+              <br />
+              <br />
+              <a href="news.html"><button id="button2">Visit ></button></a>
+            </div>
+
+            <div class="left">
+              <img src="abo-02.png" />
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <h1 align="center" class="head" id="title">Contact us</h1>
+          <br>
+          <br>
+
+          <div class="blog">
+            <div class="left">
+              <img src="img/ct.jpg" />
+            </div>
+            <div class="right">
+
+              <br>
+              <p class="pli" id="title">
+                "Have a question, feedback, or simply want to connect? We're
+                here to listen and assist! Reach out to us at Books Bazaar,
+                where customer satisfaction is our top priority. Whether you
+                prefer to drop us a line via email, give us a ring, or connect
+                through social media, our dedicated team is ready to provide
+                prompt and personalized assistance. Your inquiries are not just
+                answered; they're valued. Let's start a conversation today. Get
+                in touch with [Company Name], your trusted partner in making
+                every interaction count.""
+              </p>
+              <br />
+              <br />
+              <br />
+
+              <a href="contact_us.html"
+                ><button class="pliy"  id="button2">Visit ></button></a
+              >
+            </div>
+          </div>
+        
+          <br />
+          <br />
+          <br />
+          <div class="imgslid">
+            <h1 align="center" class="head">Our Team</h1>
+
+            <section class="slider-container">
+              <div class="slider-images">
+                <div class="slider-img">
+                  <img src="Images/rakesh1.jpg" alt="1" />
+                  <h1 class="mayur">Rakesh</h1>
+                  <div class="details">
+                    <h2>Rakesh Mal</h2>
+                    <p>Fullstack Webdeveloper</p>
+                    <br />
+                    <div class="sci">
+                      <p>
+                        <a href="#"
+                          ><i class="fa fa-facebook" aria-hidden="true"></i
+                        ></a>
+                        <a
+                          href="https://www.instagram.com/_rakeshmal"
+                          target="_main"
+                          ><i class="fa fa-instagram" aria-hidden="true"></i
+                        ></a>
+                        <a
+                          href="https://www.linkedin.com/in/rakeshmal"
+                          target="_main"
+                          ><i class="fa fa-linkedin" aria-hidden="true"></i
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-img">
+                  <img src="Images/m1.jpg" alt="2" />
+                  <h1 class="mayur">Mayur</h1>
+                  <div class="details">
+                    <h2>Mayur Acharya</h2>
+                    <p>FrontendDeveloper and WebDesigner</p>
+                    <br />
+                    <div class="sci">
+                      <p>
+                        <a href="#"
+                          ><i class="fa fa-facebook" aria-hidden="true"></i
+                        ></a>
+                        <a
+                          href="https://www.instagram.com/mayur_ac123?igsh=MTl0MWprczQ5aHlhdw=="
+                          target="_main"
+                          ><i class="fa fa-instagram" aria-hidden="true"></i
+                        ></a>
+                        <a
+                          href="https://www.linkedin.com/in/mayuracharya123?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                          target="_main"
+                          ><i class="fa fa-linkedin" aria-hidden="true"></i
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-img active">
+                  <img src="Images/khusbu1.jpg" alt="5" />
+                  <h1 class="mayur">Khusbhu</h1>
+                  <div class="details">
+                    <h2>Khushbu Singh</h2>
+                    <p>HR Manager</p>
+                    <br />
+                    <div class="sci">
+                      <p>
+                        <a href="#"
+                          ><i class="fa fa-facebook" aria-hidden="true"></i
+                        ></a>
+                        <a
+                          href="https://www.instagram.com/khushbu_singh0427?igsh=MTFiN3NsaHU1YzQ5MQ=="
+                          target="_main"
+                          ><i class="fa fa-instagram" aria-hidden="true"></i
+                        ></a>
+                        <a
+                          href="https://www.linkedin.com/in/khushbu-singh-2b052b2b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                          target="_main"
+                          ><i class="fa fa-linkedin" aria-hidden="true"></i
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-img">
+                  <img src="Images/ved.jpg" alt="3" />
+                  <h1 class="mayur">Ved</h1>
+                  <div class="details">
+                    <h2>Ved Phatak</h2>
+                    <p>WebDeveloper</p>
+                    <br />
+                    <div class="sci">
+                      <p>
+                        <a href="#"
+                          ><i class="fa fa-facebook" aria-hidden="true"></i
+                        ></a>
+                        <a
+                          href="https://www.instagram.com/imvedpathak?igsh=MWhmZDFxZGF2ZzNnZQ=="
+                          target="_main"
+                          ><i class="fa fa-instagram" aria-hidden="true"></i
+                        ></a>
+                        <a
+                          href="https://www.linkedin.com/in/ved-pathak-513805229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                          target="_main"
+                          ><i class="fa fa-linkedin" aria-hidden="true"></i
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider-img">
+                  <img src="Images/himanshu.jpg" alt="4" />
+                  <h1 class="mayur">Himanshu</h1>
+                  <div class="details">
+                    <h2>Himanshu Singh</h2>
+                    <p>Web Developer</p>
+                    <br />
+                    <div class="sci">
+                      <p>
+                        <a href="#"
+                          ><i class="fa fa-facebook" aria-hidden="true"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa fa-instagram" aria-hidden="true"></i
+                        ></a>
+                        <a href="#"
+                          ><i class="fa fa-linkedin" aria-hidden="true"></i
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <br />
+            </section>
+          </div>
+          <script>
+            jQuery(document).ready(function ($) {
+              $(".slider-img").on("click", function () {
+                $(".slider-img").removeClass("active");
+                $(this).addClass("active");
+              });
+            });
+          </script>
+        </section>
+      </section>
+    </div>
+    <footer>
+      <div class="content21">
+        <div class="article">
+          <h2 class="subscribe">SUBSCRIBE TO OUR NEWSLETTER</h2>
+          <br />
+          <p>
+            Enter your email address to receive regular updates as well as news
+            on upcoming events and specific offers
+          </p>
+        </div>
+
+        <form>
+          <div class="email">
+            <input type="text" placeholder="Email Address" class="input" />
+            <button type="submit">
+              <h4 class="submit">Subscribe</h4>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="cards21">
+        <div class="address">
+          <h3 class="underline">Books Bazaar</h3>
+          <ul>
+            <li>Anand, Nagar,</li>
+            <li>Dahisar (East)</li>
+            <li>Mumbai - 400068</li>
+            <li>mayurac123@gmail.com</li>
+          </ul>
+        </div>
+        <div class="social-icons" id="megha">
+          <h3 class="underline">Social Medias</h3>
+          <ul>
+            <li><i class="fa-brands fa-facebook"></i>Facebook</li>
+            <li><i class="fa-brands fa-twitter"></i>Twitter</li>
+            <a href="https://www.instagram.com/_booksbazaar/?igsh=OWdlM3Q1dm1pc3V1"><li><i class="fa-brands fa-instagram"></i>Instagram</li></a>
+            <a href="https://api.whatsapp.com/message/A5IBKM7VJWYGB1?autoload=1&app_absent=0"><li><i class="fa-brands fa-whatsapp"></i>Whatsapp</li></a>
+          </ul>
+        </div>
+        <div class="info">
+          <h3 class="underline">Information</h3>
+          <ul>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Refund & Return</a></li>
+            <li><a href="#">Deliveries</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        Book Bazaar Copyright &copy; All Right Reserved Book Bazaar
+      </div>
+    </footer>
+    <!-- featuredbooks -->
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

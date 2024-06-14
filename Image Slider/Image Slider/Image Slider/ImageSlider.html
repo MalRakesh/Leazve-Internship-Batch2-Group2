@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <script
+      src="https://kit.fontawesome.com/5b085419ed.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="ImageSlider.css" />
+  </head>
+
+  <body>
+    <h5>Our Team</h5>
+    <section class="slider-container">
+   
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="Images/1.png" alt="1" />
+          <h1>Rakesh</h1>
+          <div class="details">
+            <h2>Rakesh Mal</h2>
+            <p>Fullstack Webdeveloper</p>
+            <br>
+            <div class="sci">
+                <p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/_rakeshmal" target="_main"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/rakeshmal" target="_main"><i class="fa fa-linkedin" aria-hidden="true"></i></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/2.png" alt="2" />
+          <h1>Mayur</h1>
+          <div class="details">
+            <h2>Mayur Acharya</h2>
+            <p>FrontendDeveloper and WebDesigner</p>
+            <br>
+            <div class="sci">
+              <p>
+                <a href="#"
+                  ><i class="fa fa-facebook" aria-hidden="true"></i
+                ></a>
+                <a href="https://www.instagram.com/mayur_ac123?igsh=MTl0MWprczQ5aHlhdw==" target="_main"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/mayuracharya123?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  target="_main"
+                  ><i class="fa fa-linkedin" aria-hidden="true"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="Images/3.png" alt="3" />
+          <h1>Ved</h1>
+          <div class="details">
+            <h2>Ved Phatak</h2>
+            <p>WebDeveloper</p>
+            <br>
+            <div class="sci">
+                <p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/imvedpathak?igsh=MWhmZDFxZGF2ZzNnZQ==" target="_main"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/ved-pathak-513805229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_main"><i class="fa fa-linkedin" aria-hidden="true"></i></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/4.png" alt="4" />
+          <h1>Himanshu</h1>
+          <div class="details">
+            <h2>Himanshu Singh</h2>
+            <p>Web Developer</p>
+            <br>
+            <div class="sci">
+                <p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/5.png" alt="5" />
+          <h1>Khusbhu</h1>
+          <div class="details">
+            <h2>Khusbhu Singh</h2>
+            <p>HR Manager</p>
+            <br>
+            <div class="sci">
+                <p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/khushbu_singh0427?igsh=MTFiN3NsaHU1YzQ5MQ==" target="_main"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/khushbu-singh-2b052b2b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_main"><i class="fa fa-linkedin" aria-hidden="true"></i></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>

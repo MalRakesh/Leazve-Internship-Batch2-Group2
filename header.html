@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="images/header.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>dropdown Menu</title>
+    <!--favicon-->
+    <link rel="android-chrome-192x192" sizes="192x192" href="favicon/top.png">
+    <link rel="android-chrome-512x512" sizes="512x512" href="favicon/top.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/top.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/top.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/top.png">
+    <link rel="manifest" href="favicon/top.png">
+
+            <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+</head>
+<script type="text/javascript"
+    src="https://platform-api.sharethis.com/js/sharethis.js#property=664ff604006cfd001d4da667&product=sticky-share-buttons&source=platform"
+    async="async"></script>
+
+<body>
+    <!-- <div class="sharethis-sticky-share-buttons"></div> -->
+    <div id="header-col" class="menu-bar">
+        <h1 class="logo">Books<span id="bazar-col"> Bazaar</span></h1>
+        <ul>
+            <li><a href="https://booksbazaaar.000webhostapp.com/Home.php">Home</a></li>
+            <li><a href="#">Categories <i class="fas fa-caret-down"></i></a>
+
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Romantic Books</a></li>
+                        <li><a href="#">Horror Books</a></li>
+                        <li>
+                            <a href="#">Animated Books</a>
+                        </li>
+                        <li><a href="#">History Books</a></li>
+                        <li><a href="#">Motivational Books</a></li>
+                        <li><a href="#">Cooking Books</a></li>
+                        <li><a href="#">Health & Fitness Books</a></li>
+                        <li><a href="#">Adventure Books</a></li>
+                        <li><a href="#">Biography Books</a></li>
+                        <li><a href="#">Business & Economics Books</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Pages <i class="fas fa-caret-down"></i></a>
+
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="news.html">Blog</a></li>
+                        <li><a href="FAQ.php">FAQ's</a></li>
+                        <li><a href="https://booksbazaaar.000webhostapp.com/pages/contact_us.php">Contact Us</a></li>
+                        <li><a href="ImageSlider.html">Our Team</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="login.html" id="logoutLink">Logout</a>
+                <span id="google-icon" class="material-symbols-outlined">
+                    logout
+                </span>
+            </li>
+            <li><a href="#">Contact us</a></li> 
+            <!-- cart items  -->
+            <i class="bx bx-shopping-bag" id="cart-icon" data-quantity="0"></i>
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                
+                <!-- content -->
+                <div class="cart-content"></div>
+                <!-- total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">₹0</div>
+                </div>
+                <button type="button" class="btn-buy">Pay Now</button>
+                <i class="bx bx-x" id="close-cart"></i>
+        </ul>
+
+   
+
+          
+    </div>
+
+    <div class="hero">
+        &nbsp;
+    </div>
+
+    <script src="main.js"></script>
+
+
+   
+    <script>
+        let lastScrollTop = 0;
+
+        window.addEventListener("scroll", function () {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll > lastScrollTop) {
+                // Scroll down
+                document.querySelector('.menu-bar').style.top = "-80px"; // Hide the header
+            } else {
+                // Scroll up
+                document.querySelector('.menu-bar').style.top = "0"; // Show the header
+            }
+
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+    </script>
+
+    <script src="logout.js"></script>
+</body>
+
+</html>

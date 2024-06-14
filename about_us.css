@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.image {
+    flex: 1 1 40%;
+    padding: 10px;
+    max-width: 500px;
+    /* Adjust the size as needed */
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text {
+    flex: 1 1 60%;
+    padding: 10px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+
+/* For Webkit browsers (like Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #000000;
+}
+
+/* For Firefox */
+/* Note: Firefox only supports scrollbar-color currently */
+/* You can use scrollbar-width to set the width */
+/* but scrollbar-color is what actually changes the color */
+/* and it's only supported in Firefox for now */
+/* You can also use 'dark' and 'light' keywords for color */
+/* scrollbar-color: dark light; */
+/* The first color is for the thumb, the second is for the track */
+/* The track color is optional, if omitted, it'll use the browser's default */
+/* You can use any color format (hex, rgb, named colors, etc.) */
+/* Here's an example with hex colors */
+* {
+    scrollbar-width: thin;
+    /* For Firefox */
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #ff0000;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #00ff15;
+}
